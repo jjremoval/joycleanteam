@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <title>About Joy Clean Team | San Luis Obispo County House Cleaning</title>
+  <meta name="description" content="Meet Joy Clean Team — your local San Luis Obispo County house cleaning team. Honest, upfront pricing, friendly crews, and same-day service when available. Call (805) 424-5727." />
+  <link rel="canonical" href="https://joycleanteam.com/about.html" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Joy Clean Team | San Luis Obispo County House Cleaning" />
+  <meta property="og:description" content="Your local San Luis Obispo County house cleaning team — honest pricing, friendly crews, same-day service when available." />
+  <meta property="og:url" content="https://joycleanteam.com/about.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png?v=3" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ── LOCAL BUSINESS STRUCTURED DATA ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://joycleanteam.com/#business",
+    "name": "Joy Clean Team",
+    "url": "https://joycleanteam.com/",
+    "telephone": "+1-805-424-5727",
+    "email": "hello@joycleanteam.com",
+    "priceRange": "$$",
+    "description": "Fast, friendly house cleaning serving San Luis Obispo County. Standard & deep cleaning, move-in/move-out cleaning, recurring maintenance cleaning, and Airbnb turnovers. Upfront pricing, licensed and insured.",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "San Luis Obispo County" },
+      { "@type": "City", "name": "San Luis Obispo" },
+      { "@type": "City", "name": "Paso Robles" },
+      { "@type": "City", "name": "Atascadero" },
+      { "@type": "City", "name": "Arroyo Grande" },
+      { "@type": "City", "name": "Pismo Beach" },
+      { "@type": "City", "name": "Morro Bay" },
+      { "@type": "City", "name": "Nipomo" },
+      { "@type": "City", "name": "Templeton" },
+      { "@type": "City", "name": "Los Osos" },
+      { "@type": "City", "name": "Grover Beach" }
+    ],
+    "geo": { "@type": "GeoCoordinates", "latitude": 35.2828, "longitude": -120.6596 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }]
+  }
+  </script>
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+    .about-main {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 16px 40px;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      align-items: start;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .about-left { padding-top: 0; }
+
+    .about-left h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900; line-height: 1.1; margin-bottom: 16px;
+    }
+
+    .about-left h2 span { color: var(--yellow-dark); }
+
+    .about-left p {
+      font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px;
+    }
+
+    .about-left .cta-link {
+      display: inline-block; background: var(--yellow); color: var(--black);
+      font-weight: 700; font-size: 0.88rem; padding: 10px 20px;
+      border-radius: 7px; text-decoration: none; transition: background 0.2s;
+    }
+    .about-left .cta-link:hover { background: var(--yellow-dark); }
+
+    .about-right-wrap {
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .about-story { flex-shrink: 0; }
+
+    .about-story h3 {
+      font-size: 0.82rem; font-weight: 700; margin-bottom: 4px; color: var(--black);
+    }
+
+    .about-story p {
+      font-size: 0.72rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 4px;
+    }
+
+    .values-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 8px; flex: 1; min-height: 0;
+    }
+
+    .value-card {
+      background: var(--gray); border-radius: 10px; padding: 10px 12px;
+      text-align: center; border: 2px solid transparent;
+      transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+      display: flex; flex-direction: column; justify-content: center;
+      min-height: 0;
+    }
+    .value-card:hover {
+      border-color: var(--yellow); transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .value-card .icon { font-size: 2rem; margin-bottom: 6px; display: block; }
+    .value-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 5px; }
+    .value-card p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+
+    footer { padding: 20px 40px 14px; flex-shrink: 0; }
+    .footer-inner {
+      grid-template-columns: 1.5fr 1fr 1fr auto;
+      gap: 32px; padding-bottom: 14px;
+      align-items: center;
+    }
+    .footer-brand img { height: 44px; margin-bottom: 6px; display: block; }
+    .footer-brand p { font-size: 0.78rem; }
+    .footer-col h4 { font-size: 0.82rem; margin-bottom: 8px; }
+    .footer-col ul li { margin-bottom: 5px; font-size: 0.78rem; }
+    .footer-contact-item { margin-bottom: 5px; font-size: 0.78rem; }
+    .footer-bottom { margin: 10px auto 0; font-size: 0.72rem; }
+
+    @media (max-width: 900px) {
+      body { height: auto; overflow: visible; }
+      .about-main { grid-template-columns: 1fr; padding: 24px; }
+      .about-right-wrap { height: auto; overflow-y: visible; }
+    }
+    @media (max-width: 600px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html"><span class="logo-text">JOY<br><small>CLEAN TEAM</small></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Service Areas</span>
+        <ul class="nav-dropdown-menu">
+          <li><a href="#">Paso Robles</a></li>
+          <li><a href="#">San Luis Obispo</a></li>
+          <li><a href="#">Atascadero</a></li>
+          <li><a href="#">Arroyo Grande</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <a class="nav-cta" href="index.html#quote-form">🚛 Get a Free Quote</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="nav-mobile-sub">
+          <button class="nav-mobile-sub-toggle" id="nav-mobile-sub-toggle">Service Areas <span>+</span></button>
+          <ul class="nav-mobile-sub-menu" id="nav-mobile-sub-menu">
+            <li><a href="#">Paso Robles</a></li>
+            <li><a href="#">San Luis Obispo</a></li>
+            <li><a href="#">Atascadero</a></li>
+            <li><a href="#">Arroyo Grande</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="about-main">
+
+    <div class="about-left">
+      <div class="section-label">Who We Are</div>
+      <h2>About <span>Joy</span> 😊</h2>
+      <p>Your local house cleaning team — built on honest pricing, hard work, and a genuine smile.</p>
+      <a class="cta-link" href="tel:+18054245727">📞 Call Us Now — (805) 424-5727</a>
+    </div>
+
+    <div class="about-right-wrap">
+
+      <div class="about-story">
+        <h3>Why We Started 💛</h3>
+        <p>Joy Clean Team was founded with a simple mission: make getting a clean home as easy and stress-free as possible. Too many people were putting off cleanings because they didn't know who to trust, or were worried about being overcharged and underserved.</p>
+        <p>We built Joy around the opposite: upfront pricing, friendly crews, and same-day availability whenever possible. Whether you need a quick weekly tidy-up or a full deep clean, we treat every job — and every customer — with the same care.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="icon">🧽</span>
+          <h3>Show Up</h3>
+          <p>Do what we say, when we say we'll do it. No-shows and excuses aren't in our vocabulary.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">🏠</span>
+          <h3>Respect the Space</h3>
+          <p>Treat people, homes, and property with care — every time, without exception.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">💸</span>
+          <h3>Clear Pricing</h3>
+          <p>No surprises, ever. You get an upfront quote before we clean a single room.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">✨</span>
+          <h3>Leave It Better</h3>
+          <p>Every job ends cleaner than we found it. We're done when you're delighted.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text footer-logo-text">JOY<br><small>CLEAN TEAM</small></span>
+        <p>Your local, friendly cleaning team. Fast bookings, fair prices, and a smile every time. 😊</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><span>📞</span><span>(805) 424-5727</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>hello@joycleanteam.com</span></div>
+        <div class="footer-contact-item"><span>📍</span><span>San Luis Obispo County</span></div>
+        <div class="footer-contact-item"><span>🕐</span><span>Mon–Sat: 7AM – 7PM</span></div>
+      </div>
+      <a class="btn-cta" href="index.html#quote-form">🧽 Request Quote Now</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joy Junk Removal LLC, dba Joy Clean Team. All rights reserved.</span>
+      <span>Built with ❤️ for your local community.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
