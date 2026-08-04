@@ -5,20 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light" />
-  <title>House Cleaning Services in San Luis Obispo County | Joy Clean Team</title>
-  <meta name="description" content="Standard & deep cleaning, move-in/move-out cleaning, recurring maintenance, and Airbnb turnovers across San Luis Obispo County. Upfront pricing, licensed & insured. Call (805) 457-3524." />
-  <link rel="canonical" href="https://joycleanteam.com/services.html" />
+  <title>House Cleaning in San Luis Obispo County | Joy Clean Team</title>
+  <meta name="description" content="Fast, friendly house cleaning in San Luis Obispo County. Upfront pricing, same-day bookings when available, licensed & insured. Call (805) 457-3524 for a free quote." />
+  <link rel="canonical" href="https://joycleanteam.com/" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="House Cleaning Services in San Luis Obispo County | Joy Clean Team" />
-  <meta property="og:description" content="Standard & deep cleaning, move-in/move-out, recurring maintenance, and Airbnb turnovers across San Luis Obispo County. Upfront pricing, licensed & insured." />
-  <meta property="og:url" content="https://joycleanteam.com/services.html" />
+  <meta property="og:title" content="House Cleaning in San Luis Obispo County | Joy Clean Team" />
+  <meta property="og:description" content="Fast, friendly house cleaning in San Luis Obispo County. Upfront pricing, licensed & insured. Call (805) 457-3524 for a free quote." />
+  <meta property="og:url" content="https://joycleanteam.com/" />
   <meta name="twitter:card" content="summary" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#FFD100" />
   <link rel="icon" type="image/png" href="/favicon.png?v=3" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -72,108 +74,92 @@
     }
   }
   </script>
-  <style>
-    html, body { height: 100%; }
-    body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
 
-    .services-main {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 40px;
-      padding: 16px 40px 16px;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      align-items: start;
-      flex: 1;
-      min-height: 0;
-    }
-
-    .services-grid-wrap {
-      overflow-y: auto;
-      height: 100%;
-      padding-right: 4px;
-    }
-
-    .services-grid-wrap::-webkit-scrollbar { width: 4px; }
-    .services-grid-wrap::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
-
-    .services-left { padding-top: 0; }
-
-    .services-left h2 {
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 900; line-height: 1.1; margin-bottom: 16px;
-    }
-
-    .services-left h2 span { color: var(--yellow-dark); }
-
-    .services-left p {
-      font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px;
-    }
-
-    .trust-list {
-      list-style: none; margin-bottom: 20px; display: flex; flex-direction: column; gap: 7px;
-    }
-    .trust-list li {
-      font-size: 0.8rem; font-weight: 600; color: var(--black);
-      display: flex; align-items: center; gap: 7px;
-    }
-
-    .services-left .cta-link {
-      display: inline-block; background: var(--yellow); color: var(--black);
-      font-weight: 700; font-size: 0.88rem; padding: 10px 20px;
-      border-radius: 7px; text-decoration: none; transition: background 0.2s;
-    }
-    .services-left .cta-link:hover { background: var(--yellow-dark); }
-
-    .services-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-
-    .service-card {
-      background: var(--gray); border-radius: 10px; padding: 16px 14px;
-      text-align: center; border: 2px solid transparent;
-      transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
-    }
-    .service-card:hover {
-      border-color: var(--yellow); transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-    .service-card .icon { font-size: 1.6rem; margin-bottom: 6px; display: block; }
-    .service-card h3 { font-size: 0.82rem; font-weight: 700; margin-bottom: 4px; }
-    .service-card p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; }
-
-    footer { padding: 20px 40px 14px; flex-shrink: 0; }
-    .footer-inner {
-      grid-template-columns: 1.5fr 1fr 1fr auto;
-      gap: 32px; padding-bottom: 14px;
-      align-items: center;
-    }
-    .footer-brand img { height: 44px; margin-bottom: 6px; display: block; }
-    .footer-brand p { font-size: 0.78rem; }
-    .footer-col h4 { font-size: 0.82rem; margin-bottom: 8px; }
-    .footer-col ul li { margin-bottom: 5px; font-size: 0.78rem; }
-    .footer-contact-item { margin-bottom: 5px; font-size: 0.78rem; }
-    .footer-bottom { margin: 10px auto 0; font-size: 0.72rem; }
-
-    @media (max-width: 900px) {
-      body { height: auto; overflow: visible; }
-      .services-main { grid-template-columns: 1fr; padding: 24px; }
-    }
-    @media (max-width: 600px) {
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-inner { grid-template-columns: 1fr; gap: 28px; }
-    }
-  </style>
+  <!-- ── FAQ STRUCTURED DATA ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does house cleaning cost in San Luis Obispo County?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pricing is based on your home's size and how deep a clean it needs. We give you a clear, upfront price before we start — no padded hourly surprises. Call (805) 457-3524 for a free quote." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I be charged more if the cleaning takes longer than expected?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. We quote a flat price based on your home, not an hourly rate. The quote is the price, with no surprises." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the price go up once you start the job?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No — the price we quote is the price you pay. We never change rates in the middle of a job or add hidden fees. What we quote is what you pay." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day cleaning?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — same-day and next-day bookings are often available. Call early at (805) 457-3524 and we'll do our best to get to you today." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in a standard cleaning?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Dusting, vacuuming, mopping, kitchens, bathrooms, and all living spaces. If you want extras like inside the fridge or oven, just ask — we'll quote it up front." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you bring your own supplies?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we bring all our own supplies and equipment, including eco-friendly, pet-safe products on request. Nothing you need to provide." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you do deep cleans or move-out cleans?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — from a standard tidy-up to a full deep clean, including the baseboards, inside cabinets, and other detail work most cleanings skip." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you do apartment & student move-out cleanings?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — move-outs are one of our busiest jobs. Whether you're a Cal Poly student clearing out a dorm or apartment or a family moving across town, we get it spotless fast — often same-day — so you get your deposit back." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer recurring cleaning plans?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — weekly, biweekly, or monthly maintenance cleanings, with a consistent rate and the same trusted crew whenever possible." }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "All of San Luis Obispo County — San Luis Obispo, Paso Robles, Atascadero, Arroyo Grande, Pismo Beach, Morro Bay, Nipomo, and nearby towns." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be home for the cleaning?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Not always. As long as we have a way in and you've approved the quote, we can often complete the job without you on site." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Joy Clean Team is fully licensed and insured, so your home and property are protected on every job." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a quote?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Call (805) 457-3524 or use the form at joycleanteam.com. Free, no obligation." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <!-- ── NAVBAR ── -->
   <nav>
-    <a class="logo" href="index.html"><img src="joycleanteamlogo.png" alt="Joy Clean Team" /></a>
+    <a class="logo" href="index.html">
+      <img src="joycleanteamlogo.png" alt="Joy Clean Team" />
+    </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
       <li class="nav-dropdown">
         <span class="nav-dropdown-toggle">Service Areas</span>
         <ul class="nav-dropdown-menu">
@@ -185,14 +171,14 @@
       </li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav-cta" href="index.html#quote-form">🚛 Get a Free Quote</a>
+    <a class="nav-cta" href="#quote-form">🚛 Get a Free Quote</a>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-mobile-menu" id="nav-mobile-menu">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
         <li class="nav-mobile-sub">
           <button class="nav-mobile-sub-toggle" id="nav-mobile-sub-toggle">Service Areas <span>+</span></button>
           <ul class="nav-mobile-sub-menu" id="nav-mobile-sub-menu">
@@ -207,79 +193,155 @@
     </div>
   </nav>
 
-  <div class="services-main">
+  <!-- ── HERO + FORM ── -->
+  <div class="hero-form-wrapper">
+    <div class="hero-form">
 
-    <div class="services-left">
-      <div class="section-label">What We Clean</div>
-      <h2>Our <span>Services</span> 🧽</h2>
-      <p>From a quick weekly tidy-up to a full deep clean — we handle it all, fast and affordably.</p>
-      <ul class="trust-list">
-        <li>🏠 Residential & Commercial</li>
-        <li>💸 Upfront Pricing — No Hidden Fees</li>
-        <li>🙌 Licensed & Insured</li>
-      </ul>
-      <a class="cta-link" href="tel:+18054573524">📞 Call Us Now — (805) 457-3524</a>
-    </div>
-
-    <div class="services-grid-wrap">
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="icon">🧹</span>
-          <h3>Standard Home Cleaning</h3>
-          <p>Kitchens, bathrooms, dusting, vacuuming, and mopping — every visit.</p>
+      <!-- LEFT: headline + info -->
+      <div class="hero-content">
+        <h1>Mess Gone. <span>Joy Found.</span> 🎉</h1>
+        <p class="sub">Same-day cleaning when you need it — friendly crews, honest pricing, and a spotless home every time.</p>
+        <a class="call-cta" href="tel:+18054573524">📞 Call Us Now — (805) 457-3524</a>
+        <p style="font-size:1.6rem;font-weight:900;color:#fff;margin-bottom:14px;">How It Works 👇</p>
+        <div class="hero-contact-strip">
+          <div class="hcs-item">
+            <div class="hcs-icon">1</div>
+            <div>
+              <a href="#quote-form" style="color:#fff;text-decoration:none;"><strong>📋 Book Online, Text, or Call</strong></a>
+              <span>Fill out the free quote form →</span>
+            </div>
+          </div>
+          <div class="hcs-item">
+            <div class="hcs-icon">2</div>
+            <div><strong>🧽 We Show Up & Quote</strong><span>On-time arrival, upfront price — no surprises</span></div>
+          </div>
+          <div class="hcs-item">
+            <div class="hcs-icon">3</div>
+            <div><strong>✅ Mess Gone. Done!</strong><span>You approve, we clean — it's that easy</span></div>
+          </div>
         </div>
-        <div class="service-card">
-          <span class="icon">✨</span>
-          <h3>Deep Cleaning</h3>
-          <p>Baseboards, inside cabinets, and the detail work regular cleanings skip.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">📦</span>
-          <h3>Move-In / Move-Out Cleaning</h3>
-          <p>Spotless top to bottom — get your deposit back or start fresh.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🔁</span>
-          <h3>Recurring Maintenance</h3>
-          <p>Weekly, biweekly, or monthly — same trusted crew, consistent rate.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🏡</span>
-          <h3>Airbnb & Rental Turnovers</h3>
-          <p>Fast, reliable turnovers between guests, on your schedule.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🪟</span>
-          <h3>Window Cleaning</h3>
-          <p>Interior and exterior glass, streak-free.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🛋️</span>
-          <h3>Carpet & Upholstery</h3>
-          <p>Deep-clean carpets, rugs, and furniture fabric.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🏢</span>
-          <h3>Office Cleaning</h3>
-          <p>Desks, common areas, restrooms — kept guest-ready.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🏗️</span>
-          <h3>Post-Construction Cleaning</h3>
-          <p>Dust, debris, and residue cleared after the crew leaves.</p>
-        </div>
-        <div class="service-card">
-          <span class="icon">🌿</span>
-          <h3>Eco-Friendly Cleaning</h3>
-          <p>Pet- and family-safe green products, available on request.</p>
-        </div>
+        <a href="#quote-form" class="mobile-form-cta">Fill out the form below ↓</a>
       </div>
-    </div>
 
+      <!-- RIGHT: form -->
+      <div class="form-panel" id="quote-form">
+        <h3>📝 Request a Free Quote 🎯</h3>
+        <form id="contact-form" onsubmit="submitForm(event)">
+          <!-- Honeypot: hidden from humans, bots fill it -> submission is silently dropped -->
+          <input type="text" id="cf-company" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+          <div class="cf-group">
+            <label>Name *</label>
+            <input type="text" id="cf-name" placeholder="Enter your name" required />
+          </div>
+          <div class="cf-group">
+            <label>Email *</label>
+            <input type="email" id="cf-email" placeholder="Enter your email" required />
+          </div>
+          <div class="cf-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="cf-phone" placeholder="Enter your phone number" required />
+          </div>
+          <div class="cf-group">
+            <label>Message *</label>
+            <textarea id="cf-message" placeholder="Tell us what you need cleaned..." required></textarea>
+          </div>
+          <button type="submit" class="cf-submit" id="cf-btn">Submit</button>
+          <p class="cf-note" id="cf-status"></p>
+        </form>
+      </div>
+
+    </div>
   </div>
 
+  <!-- ── TRUST BAR ── -->
+  <div class="trust-bar">
+    <div class="trust-item"><span>🏠</span> Residential & Commercial</div>
+    <div class="trust-item"><span>💸</span> Honest Pricing — Flat Rate, No Surprises</div>
+    <div class="trust-item"><span>🙌</span> Licensed & Insured</div>
+    <div class="trust-item"><span>🧹</span> Eco-Friendly Products Available</div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <div class="section-label">FAQ</div>
+      <h2 class="faq-heading">House Cleaning in San Luis Obispo County — Your Questions, Answered</h2>
+
+      <details class="faq-item">
+        <summary>How much does house cleaning cost in San Luis Obispo County?</summary>
+        <p>Pricing is based on your home's size and how deep a clean it needs. We give you a clear, upfront price before we start — no padded hourly surprises. Call (805) 457-3524 for a free quote.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will I be charged more if the cleaning takes longer than expected?</summary>
+        <p>No. We quote a flat price based on your home, not an hourly rate. The quote is the price, with no surprises.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will the price go up once you start the job?</summary>
+        <p>No — the price we quote is the price you pay. We never change rates in the middle of a job or tack on hidden fees. What we quote is what you pay. 👍</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you offer same-day cleaning?</summary>
+        <p>Yes — same-day and next-day bookings are often available. Call early at (805) 457-3524 and we'll do our best to get to you today.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What's included in a standard cleaning?</summary>
+        <p>Dusting, vacuuming, mopping, kitchens, bathrooms, and all living spaces. If you want extras like inside the fridge or oven, just ask — we'll quote it up front.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you bring your own supplies?</summary>
+        <p>Yes — we bring all our own supplies and equipment, including eco-friendly, pet-safe products on request. Nothing you need to provide.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you do deep cleans or move-out cleans?</summary>
+        <p>Yes — from a standard tidy-up to a full deep clean, including the baseboards, inside cabinets, and other detail work most cleanings skip.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you do apartment & student move-out cleanings?</summary>
+        <p>Yes — move-outs are one of our busiest jobs. Whether you're a Cal Poly student clearing out a dorm or apartment or a family moving across town, we get it spotless fast — often same-day — so you get your deposit back. 🎓</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you offer recurring cleaning plans?</summary>
+        <p>Yes — weekly, biweekly, or monthly maintenance cleanings, with a consistent rate and the same trusted crew whenever possible.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What areas do you serve?</summary>
+        <p>All of San Luis Obispo County — San Luis Obispo, Paso Robles, Atascadero, Arroyo Grande, Pismo Beach, Morro Bay, Nipomo, and nearby towns.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to be home for the cleaning?</summary>
+        <p>Not always. As long as we have a way in and you've approved the quote, we can often complete the job without you on site.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are you licensed and insured?</summary>
+        <p>Yes. Joy Clean Team is fully licensed and insured, so your home and property are protected on every job.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I get a quote?</summary>
+        <p>Call (805) 457-3524, or use the form at joycleanteam.com. Free, no obligation.</p>
+      </details>
+
+      <a class="faq-cta" href="#quote-form">🧽 Get Your Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Reviews section intentionally omitted until real Joy Clean Team reviews exist.
+       Do not add placeholder/fabricated reviews here — see CLAUDE.md. -->
+
+  <!-- ── FOOTER ── -->
   <footer>
-    <div class="footer-inner">
+    <div class="footer-inner" style="grid-template-columns: 1.5fr 1fr 1fr 1fr;">
       <div class="footer-brand">
         <img src="joycleanteamlogo.png" alt="Joy Clean Team" />
         <p>Your local, friendly cleaning team. Fast bookings, fair prices, and a smile every time. 😊</p>
@@ -293,13 +355,21 @@
         </ul>
       </div>
       <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="#">Paso Robles</a></li>
+          <li><a href="#">San Luis Obispo</a></li>
+          <li><a href="#">Atascadero</a></li>
+          <li><a href="#">Arroyo Grande</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
         <h4>Contact</h4>
         <div class="footer-contact-item"><span>📞</span><span>(805) 457-3524</span></div>
         <div class="footer-contact-item"><span>✉️</span><span>hello@joycleanteam.com</span></div>
         <div class="footer-contact-item"><span>📍</span><span>San Luis Obispo County</span></div>
         <div class="footer-contact-item"><span>🕐</span><span>Mon–Sat: 7AM – 7PM</span></div>
       </div>
-      <a class="btn-cta" href="index.html#quote-form">🧽 Request Quote Now</a>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Joy Junk Removal LLC, dba Joy Clean Team. All rights reserved.</span>
@@ -307,6 +377,7 @@
     </div>
   </footer>
 
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
