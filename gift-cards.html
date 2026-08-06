@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <title>Gift Cards | Joy Clean Team</title>
+  <meta name="description" content="Give the gift of a clean home. Joy Clean Team gift cards in three tiers, available as digital or physical cards. Call or text (805) 457-4584 to buy one." />
+  <link rel="canonical" href="https://joycleanteam.com/gift-cards.html" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gift Cards | Joy Clean Team" />
+  <meta property="og:description" content="Give the gift of a clean home. Three gift card tiers, available digital or physical. Call or text (805) 457-4584." />
+  <meta property="og:url" content="https://joycleanteam.com/gift-cards.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png?v=3" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ── LOCAL BUSINESS + GIFT CARD OFFER STRUCTURED DATA ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://joycleanteam.com/#business",
+    "name": "Joy Clean Team",
+    "url": "https://joycleanteam.com/",
+    "telephone": "+1-805-457-4584",
+    "email": "hello@joycleanteam.com",
+    "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Gift Cards",
+      "itemListElement": [
+        { "@type": "Offer", "price": "150", "priceCurrency": "USD", "itemOffered": { "@type": "Product", "name": "Joy Clean Team Gift Card — $150" } },
+        { "@type": "Offer", "price": "250", "priceCurrency": "USD", "itemOffered": { "@type": "Product", "name": "Joy Clean Team Gift Card — $250" } },
+        { "@type": "Offer", "price": "450", "priceCurrency": "USD", "itemOffered": { "@type": "Product", "name": "Joy Clean Team Gift Card — $450" } }
+      ]
+    }
+  }
+  </script>
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; min-height: 100vh; overflow: auto; }
+
+    .gift-main {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      padding: 16px 40px;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      align-items: start;
+      flex: 0 1 auto;
+      min-height: auto;
+    }
+
+    .gift-left { padding-top: 0; }
+
+    .gift-left h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900; line-height: 1.1; margin-bottom: 16px;
+    }
+    .gift-left h2 span { color: var(--teal-dark); }
+
+    .gift-left p {
+      font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px;
+    }
+
+    .gift-left .cta-link {
+      display: inline-block; background: var(--teal); color: var(--black);
+      font-weight: 700; font-size: 0.88rem; padding: 10px 20px;
+      border-radius: 7px; text-decoration: none; transition: background 0.2s;
+    }
+    .gift-left .cta-link:hover { background: var(--teal-dark); }
+
+    .gift-left .cta-secondary {
+      display: block; margin-top: 10px; font-size: 0.78rem; color: var(--text-muted);
+    }
+    .gift-left .cta-secondary a { color: var(--teal-dark); font-weight: 600; text-decoration: none; }
+    .gift-left .cta-secondary a:hover { text-decoration: underline; }
+
+    .gift-right-wrap {
+      overflow: visible;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+      min-height: 0;
+    }
+
+    .tier-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; flex-shrink: 0;
+    }
+
+    .tier-card {
+      background: var(--mist); border-radius: 12px; padding: 18px 16px;
+      border: 2px solid transparent;
+      transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+      display: flex; flex-direction: column; justify-content: center; min-height: 0;
+    }
+    .tier-card:hover {
+      border-color: var(--teal); transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .tier-card { position: relative; }
+    .tier-card .price { font-size: 1.9rem; font-weight: 900; color: var(--black); line-height: 1; }
+    .tier-card .price span { font-size: 1rem; font-weight: 700; color: var(--teal-dark); }
+    .tier-card .price .original { text-decoration: line-through; opacity: 0.5; margin-right: 8px; font-size: 1.5rem; }
+    .tier-card .eyebrow {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--teal-dark); margin: 8px 0 6px; padding-bottom: 10px;
+      border-bottom: 3px solid var(--teal);
+    }
+    .tier-card.featured .eyebrow { border-bottom-color: var(--yellow); }
+    .tier-card p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+    .tier-card.featured .badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: #dc2626; color: #fff; padding: 6px 14px; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tier-card .btn-cta {
+      display: inline-block; background: var(--teal); color: var(--black);
+      font-weight: 700; font-size: 0.85rem; padding: 10px 20px;
+      border-radius: 7px; text-decoration: none; text-align: center;
+      margin-top: 12px; border: none; cursor: pointer; transition: background 0.2s;
+    }
+    .tier-card .btn-cta:hover { background: var(--teal-dark); }
+    .tier-card.featured .btn-cta { background: var(--yellow); color: var(--black); }
+    .tier-card.featured .btn-cta:hover { background: #ffc800; }
+
+    .never-expires-badge {
+      max-width: 1000px; margin: 0 auto 24px; padding: 0 40px; width: 100%;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      color: #fff; padding: 12px 20px; border-radius: 8px;
+      font-size: 0.9rem; font-weight: 700; text-align: center;
+    }
+
+    .how-it-works {
+      max-width: 1000px; margin: 40px auto; padding: 0 40px; width: 100%;
+    }
+    .how-it-works-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .how-step {
+      text-align: center;
+    }
+    .how-step-num {
+      background: var(--teal); color: #fff; width: 40px; height: 40px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;
+    }
+    .how-step-title { font-weight: 700; color: var(--black); margin-bottom: 8px; }
+    .how-step-desc { font-size: 0.85rem; color: var(--text-muted); }
+
+    .testimonials {
+      max-width: 1000px; margin: 40px auto; padding: 0 40px; width: 100%;
+    }
+    .testimonial {
+      background: var(--mist); padding: 20px; border-radius: 8px; margin-bottom: 16px;
+      border-left: 4px solid var(--teal);
+    }
+    .testimonial-text { font-size: 0.9rem; color: var(--black); line-height: 1.6; margin-bottom: 10px; }
+    .testimonial-author { font-weight: 700; color: var(--teal-dark); font-size: 0.85rem; }
+
+    .corporate-section {
+      max-width: 1000px; margin: 40px auto; padding: 20px 40px; width: 100%;
+      background: linear-gradient(135deg, rgba(15, 163, 164, 0.08), rgba(255, 209, 0, 0.08));
+      border-radius: 12px; border: 1px solid rgba(15, 163, 164, 0.2);
+    }
+    .corporate-title { font-size: 1.2rem; font-weight: 700; color: var(--black); margin-bottom: 12px; }
+    .corporate-desc { font-size: 0.9rem; color: var(--black); line-height: 1.6; }
+
+    .digital-callout {
+      max-width: 1000px; margin: 40px auto; padding: 0 40px; width: 100%;
+      font-size: 0.95rem; color: var(--black); text-align: center;
+    }
+    .digital-highlight { color: var(--teal-dark); font-weight: 700; }
+
+    .tier-card.featured { background: var(--teal); border-color: var(--teal); }
+    .tier-card.featured .price,
+    .tier-card.featured .price span,
+    .tier-card.featured .eyebrow { color: #ffffff; }
+    .tier-card.featured p { color: #ffffff; }
+
+    .gift-note {
+      background: #fff; border: 2px dashed var(--teal); border-radius: 10px;
+      padding: 12px 16px; font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;
+      flex-shrink: 0;
+    }
+    .gift-note strong { color: var(--black); }
+
+    .promo-banner {
+      background: var(--yellow); color: var(--black);
+      border-radius: 10px; padding: 10px 16px;
+      font-size: 0.82rem; font-weight: 700; text-align: center;
+      flex-shrink: 0;
+    }
+    .promo-banner .sub {
+      display: block; font-weight: 600; font-size: 0.74rem; opacity: 0.8; margin-top: 2px;
+    }
+
+    .gift-sections {
+      max-width: 1000px; margin: 60px auto 40px; padding: 0 40px; width: 100%;
+    }
+    .gift-section-title { font-size: 1.8rem; font-weight: 900; color: var(--black); margin-bottom: 24px; }
+    .perfect-for-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 40px;
+    }
+    .perfect-for-item {
+      background: var(--mist); padding: 16px; border-radius: 8px;
+      font-size: 0.9rem; color: var(--black); font-weight: 600;
+    }
+    .faq-item { margin-bottom: 20px; }
+    .faq-question {
+      font-size: 0.95rem; font-weight: 700; color: var(--black); margin-bottom: 8px; cursor: pointer;
+    }
+    .faq-answer { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    .gift-disclaimer {
+      max-width: 1000px; margin: 40px auto; padding: 20px 40px 0; width: 100%;
+      font-size: 0.78rem; color: var(--text-muted); line-height: 1.6;
+      border-top: 1px solid rgba(0,0,0,0.1); padding-top: 16px;
+    }
+    .gift-disclaimer strong { color: var(--black); }
+
+    footer { padding: 20px 40px 14px; flex-shrink: 0; }
+    .footer-inner {
+      grid-template-columns: 1.5fr 1fr 1fr auto;
+      gap: 32px; padding-bottom: 14px;
+      align-items: center;
+    }
+    .footer-brand img { height: 44px; margin-bottom: 6px; display: block; }
+    .footer-brand p { font-size: 0.78rem; }
+    .footer-col h4 { font-size: 0.82rem; margin-bottom: 8px; }
+    .footer-col ul li { margin-bottom: 5px; font-size: 0.78rem; }
+    .footer-contact-item { margin-bottom: 5px; font-size: 0.78rem; }
+    .footer-bottom { margin: 10px auto 0; font-size: 0.72rem; }
+
+    @media (max-width: 900px) {
+      body { height: auto; overflow: visible; }
+      .gift-main { grid-template-columns: 1fr; padding: 24px; }
+      .gift-right-wrap { height: auto; }
+      .tier-grid { grid-template-columns: 1fr; }
+      .gift-sections { padding: 0 24px; }
+      .perfect-for-grid { grid-template-columns: 1fr; }
+      .how-it-works { padding: 0 24px; }
+      .how-it-works-grid { grid-template-columns: 1fr; }
+      .testimonials { padding: 0 24px; }
+      .corporate-section { padding: 20px 24px; margin: 40px 24px; width: auto; }
+      .digital-callout { padding: 0 24px; }
+      .never-expires-badge { padding: 0 24px; }
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "brand brand" "links contact" "cta cta";
+        gap: 18px 32px;
+      }
+      .footer-inner > :nth-child(1) { grid-area: brand; }
+      .footer-inner > :nth-child(2) { grid-area: links; }
+      .footer-inner > :nth-child(3) { grid-area: contact; }
+      .footer-inner > :nth-child(4) { grid-area: cta; justify-self: start; }
+    }
+    @media (max-width: 600px) {
+      .gift-section-title { font-size: 1.4rem; }
+      .footer-inner {
+        grid-template-columns: 1fr;
+        grid-template-areas: "brand" "links" "contact" "cta";
+        gap: 20px;
+        text-align: center;
+      }
+      .footer-inner > :nth-child(4) { justify-self: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html"><img src="joycleanteamlogo.png" alt="Joy Clean Team" /></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Service Areas</span>
+        <ul class="nav-dropdown-menu">
+          <li><a href="paso-robles-house-cleaning.html">Paso Robles</a></li>
+          <li><a href="san-luis-obispo-house-cleaning.html">San Luis Obispo</a></li>
+          <li><a href="atascadero-house-cleaning.html">Atascadero</a></li>
+          <li><a href="arroyo-grande-house-cleaning.html">Arroyo Grande</a></li>
+          <li><a href="nipomo-house-cleaning.html">Nipomo</a></li>
+          <li><a href="grover-beach-house-cleaning.html">Grover Beach</a></li>
+          <li><a href="oceano-house-cleaning.html">Oceano</a></li>
+          <li><a href="shell-beach-house-cleaning.html">Shell Beach</a></li>
+          <li><a href="morro-bay-house-cleaning.html">Morro Bay</a></li>
+          <li><a href="los-osos-house-cleaning.html">Los Osos</a></li>
+          <li><a href="cayucos-house-cleaning.html">Cayucos</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gift-cards.html" class="active">Gift Cards</a></li>
+    </ul>
+    <a class="nav-cta" href="index.html#quote-form">🧽 Get a Free Quote</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="nav-mobile-sub">
+          <button class="nav-mobile-sub-toggle" id="nav-mobile-sub-toggle">Service Areas <span>+</span></button>
+          <ul class="nav-mobile-sub-menu" id="nav-mobile-sub-menu">
+            <li><a href="paso-robles-house-cleaning.html">Paso Robles</a></li>
+            <li><a href="san-luis-obispo-house-cleaning.html">San Luis Obispo</a></li>
+            <li><a href="atascadero-house-cleaning.html">Atascadero</a></li>
+            <li><a href="arroyo-grande-house-cleaning.html">Arroyo Grande</a></li>
+            <li><a href="nipomo-house-cleaning.html">Nipomo</a></li>
+            <li><a href="grover-beach-house-cleaning.html">Grover Beach</a></li>
+            <li><a href="oceano-house-cleaning.html">Oceano</a></li>
+            <li><a href="shell-beach-house-cleaning.html">Shell Beach</a></li>
+            <li><a href="morro-bay-house-cleaning.html">Morro Bay</a></li>
+            <li><a href="los-osos-house-cleaning.html">Los Osos</a></li>
+            <li><a href="cayucos-house-cleaning.html">Cayucos</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gift-cards.html" class="active">Gift Cards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="gift-main">
+
+    <div class="gift-left">
+      <div class="section-label">Gift Cards</div>
+      <h2>Give the Gift of <span>a Clean Home</span> 🎁</h2>
+      <p>A Joy Clean Team gift card is a thoughtful, no-guesswork gift — for a friend, a client, or someone who could just use a little time back. Redeemable toward any cleaning service we offer.*</p>
+      <a class="cta-link" href="tel:+18054574584">📞 Call or Text — (805) 457-4584</a>
+      <span class="cta-secondary">or email <a href="mailto:hello@joycleanteam.com">hello@joycleanteam.com</a> to arrange one</span>
+    </div>
+
+    <div class="gift-right-wrap">
+      <div class="promo-banner">
+        🎉 Launch Pricing — Limited Time
+        <span class="sub">Save $25–$100 on gift cards through [end date]</span>
+      </div>
+      <div class="never-expires-badge">
+        ✨ Never Expires • Always Has Value
+      </div>
+      <div class="tier-grid">
+        <div class="tier-card">
+          <div class="price"><span class="original">$150</span>$125</div>
+          <div class="eyebrow">Starter Clean</div>
+          <p>A thoughtful gift for someone who could use a break. Perfect for a single room deep clean, bathroom refresh, or targeted help around the house. Includes our full deep clean process—baseboards, blinds, beds, full surfaces. Nothing skipped. Satisfaction guaranteed on every visit.</p>
+          <a href="https://buy.stripe.com/7sYfZ99A49NX2gG1k9eQM07" class="btn-cta">🛒 Buy Now</a>
+        </div>
+        <div class="tier-card featured">
+          <span class="badge">Most Popular Gift</span>
+          <div class="price"><span class="original">$250</span>$200</div>
+          <div class="eyebrow">Full Home Clean</div>
+          <p>Comfortably covers a complete deep clean of most 2–3 bedroom homes. Everything included: deep clean, eco-friendly products safe for kids and pets, highly trained and thoughtful team. This is the gift that keeps giving. We stand behind every visit.</p>
+          <a href="https://buy.stripe.com/14A9AL6nS2lvf3sbYNeQM06" class="btn-cta">🛒 Buy Now</a>
+        </div>
+        <div class="tier-card">
+          <div class="price"><span class="original">$450</span>$350</div>
+          <div class="eyebrow">The gift of Joy</div>
+          <p>Perfect for larger homes or someone who deserves multiple cleans. Apply the balance across visits, or save it for when life gets busy. Same team every time—licensed and insured. Full deep clean standard on every visit. No expiration on the value.</p>
+          <a href="https://buy.stripe.com/28E4gr4fKd096wW2odeQM05" class="btn-cta">🛒 Buy Now</a>
+        </div>
+      </div>
+      <div class="gift-note">
+        <strong>Digital or physical — your choice.</strong> Every gift card can be emailed as a printable digital certificate or handed over as a physical card. Just let us know which you'd like when you call or text.
+        <br /><br />
+        <strong>Need a custom amount?</strong> Call or text (805) 457-4584 and we'll set up any amount you'd like.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="how-it-works">
+    <h2 class="gift-section-title">How It Works</h2>
+    <div class="how-it-works-grid">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-title">Order</div>
+        <div class="how-step-desc">Choose your tier. Digital or physical delivery.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-title">Receive</div>
+        <div class="how-step-desc">Email instantly or give in person. Personalize with a gift message.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-title">Redeem</div>
+        <div class="how-step-desc">Bring the card on cleaning day or leave in an envelope. No expiration.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <h2 class="gift-section-title">Real People, Real Gratitude</h2>
+    <div class="testimonial">
+      <div class="testimonial-text">"I gifted a real estate client a clean with Joy Clean Team. It felt great to buy them back some time after all the effort they put into buying their first home—a job in itself."</div>
+      <div class="testimonial-author">— Gabe L., Realtor</div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-text">"I got my friend a cleaning gift card for her baby shower and kind of forgot about it. A few weeks after the baby was born, I got the kindest thank you text. I couldn't buy her a good night's sleep, but at least she didn't have to clean the toilet for a while."</div>
+      <div class="testimonial-author">— Jess H.</div>
+    </div>
+  </div>
+
+  <div class="corporate-section">
+    <div class="corporate-title">💼 Perfect for Corporate Teams</div>
+    <div class="corporate-desc">Stack them in your office drawer and save for performance bonuses, or congratulate your team on a new baby, a promotion, or just to say thanks. Bulk corporate pricing available—call (805) 457-4584 to ask about larger orders.</div>
+  </div>
+
+  <div class="digital-callout">
+    <p><span class="digital-highlight">⚡ Need a gift right now?</span> Digital gift cards are delivered instantly via email and can include a personalized message. Perfect for last-minute gifts.</p>
+    <p style="margin-top: 20px; font-size: 0.95rem; font-style: italic; color: var(--text-muted);">Did you make a mess with your significant other? Let Joy Clean Team clean it up for you. 😄</p>
+  </div>
+
+  <div class="gift-sections">
+    <h2 class="gift-section-title">Perfect For</h2>
+    <div class="perfect-for-grid">
+      <div class="perfect-for-item">🎁 Corporate gifts & employee appreciation</div>
+      <div class="perfect-for-item">🎂 Holiday gifts & birthdays</div>
+      <div class="perfect-for-item">👶 New parents & overwhelmed friends</div>
+      <div class="perfect-for-item">🕐 "Get your time back" gifts for busy professionals</div>
+    </div>
+
+    <h2 class="gift-section-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">❓ How do I redeem a gift card?</div>
+      <div class="faq-answer">Simply present your gift card to our clean team on your cleaning day. If you won't be present, just leave the gift card in an envelope for the team to find.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">❓ Do gift cards expire?</div>
+      <div class="faq-answer">No, they never expire. While the cost of a clean changes over time due to inflation and fuel prices, your gift card can always be credited toward any cleaning service we offer. The value never goes away.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">❓ Can I combine multiple gift cards?</div>
+      <div class="faq-answer">Yes! You can combine multiple gift cards toward a single clean or use them across multiple visits. Just let us know when you call or text to schedule.</div>
+    </div>
+
+    <div class="gift-disclaimer">
+      <strong>* About gift card coverage:</strong> These gift packages cover most cleans of the size recommended, but not all situations carry the exact cost. A 1,100 sq. ft. home in good condition might require the same effort as a larger seaside manor depending on layout, condition, and specific needs. We charge a fair, straightforward rate every time—if a clean exceeds the card's value, we let you know upfront, and if it's under, you save the difference for next time.
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="joycleanteamlogo.png" alt="Joy Clean Team" />
+        <p>Your local, friendly cleaning team. Fast bookings, fair prices, and a smile every time. 😊</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gift-cards.html">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><span>📞</span><span>(805) 457-4584</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>hello@joycleanteam.com</span></div>
+        <div class="footer-contact-item"><span>📍</span><span>San Luis Obispo County</span></div>
+        <div class="footer-contact-item"><span>🕐</span><span>Mon–Sat: 7AM – 7PM</span></div>
+      </div>
+      <a class="btn-cta" href="tel:+18054574584">🎁 Call to Buy a Gift Card</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Joy Junk Removal LLC, dba Joy Clean Team. All rights reserved.</span>
+      <span>Built with ❤️ for your local community.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
