@@ -241,6 +241,14 @@ nav .nav-cta:hover {
   text-align: center;
 }
 
+/* Hide the Jobber "Powered by" attribution link in the embedded work
+   request form. Best-effort selector (href-based, since the widget's
+   internal class names aren't inspectable from here) — verify live and
+   adjust if the badge isn't a link to jobber.com. */
+.form-panel a[href*="jobber.com"] {
+  display: none !important;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
