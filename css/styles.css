@@ -231,6 +231,23 @@ nav .nav-cta:hover {
   color: var(--black);
   height: auto;
   overflow: hidden;
+  position: relative;
+}
+
+/* Covers the Jobber "Powered by" badge in the bottom-left corner of the
+   embedded work request form. Positioned from a static screenshot, not
+   a live-measured DOM (the widget's CDN is unreachable from the dev
+   sandbox) — check live on desktop AND mobile and nudge left/bottom/
+   width/height in #jobber-badge-cover if it doesn't line up exactly. */
+#jobber-badge-cover {
+  position: absolute;
+  left: 32px;
+  bottom: 34px;
+  width: 100px;
+  height: 24px;
+  background: #fff;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .form-panel h3 {
