@@ -12,4 +12,52 @@
     <loc>https://joycleanteam.com/about.html</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://joycleanteam.com/gift-cards.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/paso-robles-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/san-luis-obispo-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/atascadero-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/arroyo-grande-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/nipomo-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/grover-beach-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/oceano-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/shell-beach-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/morro-bay-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/los-osos-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joycleanteam.com/cayucos-house-cleaning.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
