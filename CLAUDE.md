@@ -19,9 +19,10 @@ Hosted on GitHub Pages (`jjremoval/joycleanteam` — **public repo**), auto-depl
   Next step: build a Worker (can reuse the same pattern as `joyjunkremoval`'s, pointed at a new
   KV namespace and `hello@joycleanteam.com` via Resend) once Ron has created those pieces in his
   Cloudflare/Resend accounts.
-- Logo is a simple text wordmark ("JOY / CLEAN TEAM"), not a designed logo. `favicon.png`,
-  `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` are placeholder generated icons
-  (yellow rounded square, black "J") — replace with a real logo when one exists.
+- Real logo (`joycleanteamlogo.png` — smiley-face mascot + "JOY / CLEAN TEAM" wordmark) is in
+  place site-wide. `favicon.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` are the
+  smiley-face mark cropped from it, not placeholders. Bump the `?v=` query param on the favicon
+  link (all pages) if the icon files are ever regenerated, so browsers don't serve a stale cache.
 
 ## File structure
 
