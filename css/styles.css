@@ -426,6 +426,13 @@ footer {
   gap: 10px;
 }
 
+.footer-bottom a {
+  color: #555;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-bottom a:hover { color: var(--black); }
+
 /* ── SHARED (services/about pages) ── */
 .section-label {
   display: inline-block; background: var(--teal); color: var(--black);
