@@ -26,15 +26,18 @@ window.addEventListener('load', function() { if (!window.location.hash) window.s
   });
 })();
 
-// Mobile "Service Areas" sub-menu toggle
+// Mobile sub-menu toggles (Service Areas and Services)
 (function() {
-  const subToggle = document.getElementById('nav-mobile-sub-toggle');
-  const subMenu = document.getElementById('nav-mobile-sub-menu');
-  if (!subToggle || !subMenu) return;
-  subToggle.addEventListener('click', function(e) {
-    e.stopPropagation();
-    subToggle.classList.toggle('open');
-    subMenu.classList.toggle('open');
+  const toggles = document.querySelectorAll('.nav-mobile-sub-toggle');
+  toggles.forEach(function(toggle) {
+    const subMenu = toggle.nextElementSibling;
+    if (!subMenu || !subMenu.classList.contains('nav-mobile-sub-menu')) return;
+
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggle.classList.toggle('open');
+      subMenu.classList.toggle('open');
+    });
   });
 })();
 
