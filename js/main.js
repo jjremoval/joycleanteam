@@ -41,3 +41,22 @@ window.addEventListener('load', function() { if (!window.location.hash) window.s
   });
 })();
 
+// Google Ads conversion tracking for Jobber form submission
+(function() {
+  // Track form submission on homepage
+  document.addEventListener('submit', function(e) {
+    if (e.target && e.target.id && e.target.id.includes('125cf553')) {
+      // Fire Google Ads conversion event
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'allow_custom_scripts': true,
+          'value': 1.0,
+          'currency': 'USD'
+        });
+      }
+      console.log('Form submission tracked for Google Ads');
+    }
+  }, true);
+})();
+
+
