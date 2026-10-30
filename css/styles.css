@@ -2171,3 +2171,317 @@ nav .nav-links > li { display: flex; align-items: center; }
     padding: 40px 16px;
   }
 }
+
+/* ── COMMERCIAL CLEANING PAGE STYLES ── */
+
+.commercial-services {
+  padding: 56px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.commercial-services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.commercial-services-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.commercial-services-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.commercial-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.commercial-service-card {
+  background: var(--white);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.commercial-service-card:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 8px 24px rgba(255, 209, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.commercial-service-card .service-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.commercial-service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.commercial-service-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.services-note {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 16px;
+}
+
+/* RECURRING COMMERCIAL SECTION */
+.recurring-commercial {
+  padding: 56px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recurring-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.recurring-text h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.recurring-text p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.recurring-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.recurring-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* COMMERCIAL PROCESS SECTION */
+.commercial-process {
+  background: var(--mist);
+  padding: 56px 40px;
+}
+
+.process-header {
+  max-width: 1200px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.process-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.process-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.process-steps {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.process-step {
+  background: var(--white);
+  padding: 28px 24px;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.step-number {
+  width: 52px;
+  height: 52px;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 900;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.process-step h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* WHY BUSINESSES CHOOSE JOY CLEAN TEAM */
+.why-commercial {
+  padding: 56px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.why-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.why-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.why-card {
+  background: var(--white);
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.why-card:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 8px 24px rgba(255, 209, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.why-icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* MOBILE RESPONSIVE - COMMERCIAL PAGES */
+@media (max-width: 1024px) {
+  .commercial-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .recurring-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .commercial-services {
+    padding: 40px 24px;
+  }
+  
+  .commercial-services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .recurring-commercial {
+    padding: 40px 24px;
+  }
+  
+  .recurring-content {
+    gap: 24px;
+  }
+  
+  .commercial-process {
+    padding: 40px 24px;
+  }
+  
+  .process-steps {
+    gap: 16px;
+  }
+  
+  .why-commercial {
+    padding: 40px 24px;
+  }
+  
+  .why-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
