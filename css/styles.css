@@ -2249,6 +2249,106 @@ nav .nav-links > li { display: flex; align-items: center; }
   margin-top: 16px;
 }
 
+/* WHO WE WORK WITH SECTION */
+.who-we-work-with {
+  padding: 56px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.work-with-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.work-with-card {
+  background: var(--white);
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.work-with-card:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 8px 24px rgba(255, 209, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.work-icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.work-with-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.work-with-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* RECURRING BENEFITS GRID */
+.recurring-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.benefit-item {
+  background: var(--mist);
+  padding: 20px 24px;
+  border-radius: 12px;
+  border-left: 4px solid var(--teal);
+}
+
+.benefit-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.benefit-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.benefit-item p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 /* RECURRING COMMERCIAL SECTION */
 .recurring-commercial {
   padding: 56px 40px;
@@ -2430,16 +2530,24 @@ nav .nav-links > li { display: flex; align-items: center; }
   .commercial-services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
+  .work-with-grid {
+    grid-template-columns: 1fr;
+  }
+
   .recurring-content {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  
+
+  .recurring-benefits {
+    grid-template-columns: 1fr;
+  }
+
   .process-steps {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .why-grid {
     grid-template-columns: 1fr;
   }
@@ -2449,32 +2557,44 @@ nav .nav-links > li { display: flex; align-items: center; }
   .commercial-services {
     padding: 40px 24px;
   }
-  
+
   .commercial-services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
+  .who-we-work-with {
+    padding: 40px 24px;
+  }
+
+  .work-with-grid {
+    gap: 20px;
+  }
+
   .recurring-commercial {
     padding: 40px 24px;
   }
-  
+
   .recurring-content {
     gap: 24px;
   }
-  
+
+  .recurring-benefits {
+    gap: 16px;
+  }
+
   .commercial-process {
     padding: 40px 24px;
   }
-  
+
   .process-steps {
     gap: 16px;
   }
-  
+
   .why-commercial {
     padding: 40px 24px;
   }
-  
+
   .why-grid {
     gap: 20px;
   }
