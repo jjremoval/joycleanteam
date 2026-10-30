@@ -1590,3 +1590,48 @@ nav .nav-links > li { display: flex; align-items: center; }
     padding: 40px 16px;
   }
 }
+
+/* ── ENHANCED STYLING WITH YELLOW ACCENT ── */
+.btn-primary {
+  background: var(--yellow) !important;
+  color: var(--black) !important;
+  border-color: var(--yellow) !important;
+}
+
+.btn-primary:hover {
+  background: var(--yellow-dark) !important;
+  border-color: var(--yellow-dark) !important;
+}
+
+.hero-tagline {
+  color: var(--yellow) !important;
+}
+
+.featured-services {
+  background: linear-gradient(135deg, rgba(255, 209, 0, 0.08) 0%, rgba(20, 191, 192, 0.03) 100%) !important;
+}
+
+.service-featured-card:hover {
+  border-color: var(--yellow) !important;
+  box-shadow: 0 8px 24px rgba(255, 209, 0, 0.15) !important;
+}
+
+.service-featured-card:hover .learn-more {
+  color: var(--yellow-dark) !important;
+}
+
+.learn-more {
+  color: var(--yellow) !important;
+}
+
+.how-it-works {
+  background: linear-gradient(135deg, rgba(20, 191, 192, 0.05) 0%, rgba(255, 209, 0, 0.08) 100%) !important;
+}
+
+.step-number {
+  background: var(--yellow) !important;
+}
+
+.quote-section {
+  background: linear-gradient(135deg, rgba(255, 209, 0, 0.08) 0%, rgba(20, 191, 192, 0.03) 100%) !important;
+}
