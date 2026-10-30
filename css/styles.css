@@ -2056,17 +2056,30 @@ nav .nav-links > li { display: flex; align-items: center; }
   transform: translateY(-4px);
 }
 
+.review-stars {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  display: block;
+  letter-spacing: 2px;
+}
+
 .review-text {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
-  margin: 0;
+  margin: 12px 0;
 }
 
 .review-author {
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--black);
+  margin: 8px 0 4px 0;
+}
+
+.review-source {
+  font-size: 0.8rem;
+  color: #999;
   margin: 0;
 }
 
