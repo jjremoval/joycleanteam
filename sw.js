@@ -1,4 +1,4 @@
-const CACHE = "joyclean-v28";
+const CACHE = "joyclean-v29";
 
 const PRECACHE = [
   "/",
