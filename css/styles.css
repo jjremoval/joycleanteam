@@ -1109,7 +1109,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 /* TRUST INDICATORS */
 .trust-indicators {
   background: var(--mist);
-  padding: 48px 40px;
+  padding: 44px 40px;
 }
 
 .trust-grid {
@@ -1122,7 +1122,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 
 .trust-item {
   text-align: center;
-  padding: 24px 20px;
+  padding: 20px 16px;
   background: var(--white);
   border-radius: 12px;
   border: 1px solid #e8e8e8;
@@ -1130,26 +1130,26 @@ nav .nav-links > li { display: flex; align-items: center; }
 
 .trust-icon {
   font-size: 2rem;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: block;
 }
 
 .trust-item h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--black);
 }
 
 .trust-item p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* FEATURED SERVICES */
 .featured-services {
-  padding: 64px 40px;
+  padding: 56px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1232,7 +1232,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 /* WHY CHOOSE JOY */
 .why-choose {
   background: var(--mist);
-  padding: 64px 40px;
+  padding: 56px 40px;
 }
 
 .why-choose-header {
@@ -1292,7 +1292,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 
 /* HOW IT WORKS */
 .how-it-works {
-  padding: 64px 40px;
+  padding: 56px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1349,7 +1349,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 /* SERVICE AREAS */
 .service-areas-section {
   background: var(--mist);
-  padding: 64px 40px;
+  padding: 56px 40px;
 }
 
 .service-areas-header {
@@ -1403,7 +1403,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 
 /* QUOTE SECTION */
 .quote-section {
-  padding: 64px 40px;
+  padding: 56px 40px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -1935,7 +1935,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 /* ── HERO IMAGE & SERVICE IMAGES ── */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: 48px;
   align-items: center;
   padding: 64px 40px;
@@ -2008,7 +2008,7 @@ nav .nav-links > li { display: flex; align-items: center; }
 
 /* REVIEWS SECTION */
 .reviews-section {
-  padding: 64px 40px;
+  padding: 56px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -2043,10 +2043,10 @@ nav .nav-links > li { display: flex; align-items: center; }
   background: var(--white);
   border: 1px solid #e8e8e8;
   border-radius: 12px;
-  padding: 32px 28px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   transition: all 0.3s;
 }
 
